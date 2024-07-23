@@ -15,7 +15,7 @@ bash ${BOOTSTRAP_SCRIPTS_PATH}/bootstrap_repository.sh
 ######################################################################################################################
 # Download and install OpenVINO tools
 #####################################################################################################################
-bash ${BOOTSTRAP_SCRIPTS_PATH}/install_python_packages.sh
+#bash ${BOOTSTRAP_SCRIPTS_PATH}/install_python_packages.sh
 
 # ######################################################################################################################
 # # Download and install client dependencies
@@ -30,5 +30,5 @@ bash ${BOOTSTRAP_SCRIPTS_PATH}/bootstrap_git_hooks.sh
 #####################################################################################################################
 # Download and install Docker and Docker Compose
 ######################################################################################################################
-bash ${BOOTSTRAP_SCRIPTS_PATH}/install_docker_packages.sh
+#bash ${BOOTSTRAP_SCRIPTS_PATH}/install_docker_packages.sh
 

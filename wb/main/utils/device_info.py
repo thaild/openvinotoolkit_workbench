@@ -70,6 +70,7 @@ def get_ie_devices_info() -> list:
 def save_available_devices(target_id: int, devices_info: list, session: Session) -> list:
     previously_active_devices = session.query(DevicesModel).filter_by(active=True, target_id=target_id).all()
     currently_active_devices = []
+    # print(devices_info)
     for info in devices_info:
         device = info['DEVICE']
         if not DeviceTypeEnum.is_supported(device):
@@ -78,9 +79,9 @@ def save_available_devices(target_id: int, devices_info: list, session: Session)
             info['OPTIMIZATION_CAPABILITIES'].append('FP32')
         
         common_optimization_capabilities = ('I16', 'I32', 'I64', 'U64')
-        info['OPTIMIZATION_CAPABILITIES'].extend(common_optimization_capabilities)
 
         if 'OPTIMIZATION_CAPABILITIES' in info:
+            info['OPTIMIZATION_CAPABILITIES'].extend(common_optimization_capabilities)
             info['OPTIMIZATION_CAPABILITIES'] = unify_precision_names(info['OPTIMIZATION_CAPABILITIES'])
 
         device_record = session.query(DevicesModel).filter_by(device_name=device, target_id=target_id).first()
@@ -91,10 +92,10 @@ def save_available_devices(target_id: int, devices_info: list, session: Session)
             device_record = DevicesModel(
                 target_id=target_id,
                 device_type=DeviceTypeEnum.get_device(device),
-                product_name=info['FULL_DEVICE_NAME'],
+                product_name=info.get('FULL_DEVICE_NAME', ''),
                 device_name=device,
-                optimization_capabilities=info['OPTIMIZATION_CAPABILITIES'],
-                range_infer_requests=info['RANGE_FOR_ASYNC_INFER_REQUESTS'],
+                optimization_capabilities=info.get('OPTIMIZATION_CAPABILITIES', []),
+                range_infer_requests=info.get('RANGE_FOR_ASYNC_INFER_REQUESTS'),
                 range_streams=info.get('RANGE_FOR_STREAMS')
             )
             device_record.write_record(session)

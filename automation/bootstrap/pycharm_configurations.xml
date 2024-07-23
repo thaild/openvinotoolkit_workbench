@@ -5,9 +5,9 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYTHONPATH" value="$USER_HOME$/intel/openvino/python/python3.6:$USER_HOME$/intel/openvino/python/python3:$USER_HOME$/intel/openvino/tools/model_optimizer:$USER_HOME$/intel/openvino/extras/opencv/python/:$USER_HOME$/intel/openvino/python/python3.6:$USER_HOME$/openvino/python/python3:$PROJECT_DIR$/model_analyzer" />
-        <env name="LD_LIBRARY_PATH" value="$USER_HOME$/intel/openvino/extras/opencv/lib:$USER_HOME$/intel/openvino/tools/compile_tool:$USER_HOME$/intel/openvino/runtime/3rdparty/tbb/lib:$USER_HOME$/intel/openvino/runtime/3rdparty/hddl/lib:$USER_HOME$/intel/openvino/runtime/lib/intel64" />
-        <env name="INTEL_OPENVINO_DIR" value="$USER_HOME$/intel/openvino_2021" />
+        <env name="PYTHONPATH" value="/opt/intel/openvino_2022/python/python3.6:/opt/intel/openvino_2022/python/python3:/opt/intel/openvino_2022/tools/model_optimizer:/opt/intel/openvino_2022/extras/opencv/python/:/opt/intel/openvino_2022/python/python3.6:/opt/intel/openvino_2022/python/python3:$PROJECT_DIR$/model_analyzer" />
+        <env name="LD_LIBRARY_PATH" value="/opt/intel/openvino_2022/extras/opencv/lib:/opt/intel/openvino_2022/tools/compile_tool:/opt/intel/openvino_2022/runtime/3rdparty/tbb/lib:/opt/intel/openvino_2022/runtime/3rdparty/hddl/lib:/opt/intel/openvino_2022/runtime/lib/intel64" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel/openvino_2022.3.2" />
         <env name="VENV_TF2_PYTHON" value="$PROJECT_DIR$/.unified_venv/bin/python" />
         <env name="SERVER_MODE" value="development" />
         <env name="PUBLIC_PORT" value="4200" />
@@ -33,9 +33,9 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYTHONPATH" value="$USER_HOME$/intel/openvino/python/python3.6:$USER_HOME$/intel/openvino/python/python3:$USER_HOME$/intel/openvino/tools/model_optimizer:$USER_HOME$/intel/openvino/extras/opencv/python/:$USER_HOME$/intel/openvino/python/python3.6:$USER_HOME$/openvino/python/python3:$PROJECT_DIR$/model_analyzer" />
-        <env name="LD_LIBRARY_PATH" value="$USER_HOME$/intel/openvino/extras/opencv/lib:$USER_HOME$/intel/openvino/tools/compile_tool:$USER_HOME$/intel/openvino/runtime/3rdparty/tbb/lib:$USER_HOME$/intel/openvino/runtime/3rdparty/hddl/lib:$USER_HOME$/intel/openvino/runtime/lib/intel64" />
-        <env name="INTEL_OPENVINO_DIR" value="$USER_HOME$/intel/openvino_2021" />
+        <env name="PYTHONPATH" value="/opt/intel/openvino_2022/python/python3.6:/opt/intel/openvino_2022/python/python3:/opt/intel/openvino_2022/tools/model_optimizer:/opt/intel/openvino_2022/extras/opencv/python/:/opt/intel/openvino_2022/python/python3.6:/opt/intel/openvino_2022/python/python3:$PROJECT_DIR$/model_analyzer" />
+        <env name="LD_LIBRARY_PATH" value="/opt/intel/openvino_2022/extras/opencv/lib:/opt/intel/openvino_2022/tools/compile_tool:/opt/intel/openvino_2022/runtime/3rdparty/tbb/lib:/opt/intel/openvino_2022/runtime/3rdparty/hddl/lib:/opt/intel/openvino_2022/runtime/lib/intel64" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel/openvino_2022.3.2" />
         <env name="VENV_TF2_PYTHON" value="$PROJECT_DIR$/.unified_venv" />
         <env name="SERVER_MODE" value="development" />
         <env name="FLASK_APP" value="$PROJECT_DIR$/migrations/migration:APP" />
@@ -61,9 +61,9 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYTHONPATH" value="$USER_HOME$/intel/openvino/python/python3.6:$USER_HOME$/intel/openvino/python/python3:$USER_HOME$/intel/openvino/tools/model_optimizer:$USER_HOME$/intel/openvino/extras/opencv/python/:$USER_HOME$/intel/openvino/python/python3.6:$USER_HOME$/openvino/python/python3:$PROJECT_DIR$/model_analyzer" />
-        <env name="LD_LIBRARY_PATH" value="$USER_HOME$/intel/openvino/extras/opencv/lib:$USER_HOME$/intel/openvino/tools/compile_tool:$USER_HOME$/intel/openvino/runtime/3rdparty/tbb/lib:$USER_HOME$/intel/openvino/runtime/3rdparty/hddl/lib:$USER_HOME$/intel/openvino/runtime/lib/intel64" />
-        <env name="INTEL_OPENVINO_DIR" value="$USER_HOME$/intel/openvino_2021" />
+        <env name="PYTHONPATH" value="/opt/intel/openvino_2022.3.2/python/python3.9:/opt/intel/openvino_2022.3.2/python/python3:/opt/intel/openvino_2022/tools/model_optimizer:/opt/intel/openvino_2022/extras/opencv/python/:/opt/intel/openvino_2022/python/python3.6:/opt/intel/openvino_2022/python/python3:$PROJECT_DIR$/model_analyzer" />
+        <env name="LD_LIBRARY_PATH" value="/opt/intel/openvino_2022/extras/opencv/lib:/opt/intel/openvino_2022/tools/compile_tool:/opt/intel/openvino_2022/runtime/3rdparty/tbb/lib:/opt/intel/openvino_2022/runtime/3rdparty/hddl/lib:/opt/intel/openvino_2022/runtime/lib/intel64" />
+        <env name="INTEL_OPENVINO_DIR" value="/opt/intel/openvino_2022.3.2" />
         <env name="VENV_TF2_PYTHON" value="$PROJECT_DIR$/.unified_venv" />
         <env name="SERVER_MODE" value="development" />
         <env name="PUBLIC_PORT" value="4200" />

@@ -1,4 +1,4 @@
-FROM library/nginx:1.19.0-alpine
+FROM nginx:1.27.0-alpine
 
 COPY ./docker/dc_dev_config/nginx/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh

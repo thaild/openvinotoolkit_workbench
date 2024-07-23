@@ -39,7 +39,7 @@ nbformat==5.7.0
 nest-asyncio==1.5.1
 notebook==6.4.12
 packaging==21.3
-pandocfilters==1.4.3
+pandocfilters
 parso==0.7.1
 pexpect==4.8.0
 pickleshare==0.7.5
