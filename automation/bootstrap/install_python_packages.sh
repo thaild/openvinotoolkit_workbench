@@ -39,7 +39,8 @@ arch -arm64 python3 -m pip install -r ${OPENVINO_WORKBENCH_ROOT}/requirements/re
 arch -arm64 python3 -m pip install -r ${OPENVINO_WORKBENCH_ROOT}/client/automation/requirements_dev.txt
 arch -arm64 python3 -m pip install -r ${OPENVINO_WORKBENCH_ROOT}/model_analyzer/requirements.txt
 # fixed error incompatible architecture (have 'x86_64', need 'arm64e' or 'arm64')
-arch -arm64 python -m pip install numpy==1.22 pandas==1.3.5 PyNaCl==1.5.0  --no-cache
+arch -arm64 python3 -m pip install numpy==1.22 pandas==1.3.5 PyNaCl==1.5.0  --no-cache
+ARCHFLAGS="-arch arm64" pip install psutil lxml datumaro==1.1.0  --no-cache
 deactivate
 
 printf "\n Installing dependencies of deep learning frameworks \n\n"
