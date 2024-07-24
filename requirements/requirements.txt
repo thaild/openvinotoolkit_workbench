@@ -36,9 +36,7 @@ numpy==1.22.0
 packaging==21.3
 paramiko==3.4.0
 pg8000==1.21.1
-# psutil==5.8.0
-# fix-cpu-freq-apple-silicon
-psutil@git+https://github.com/snOm3ad/psutil.git@27a1432daeacd46b287517c11bfea2af4fd95a88
+psutil==5.8.0
 pkginfo==1.8.2
 py-cpuinfo==8.0.0
 pycocotools
