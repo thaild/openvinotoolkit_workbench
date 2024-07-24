@@ -4,7 +4,6 @@ export LD_LIBRARY_PATH=/opt/intel/openvino_2022/extras/opencv/lib:/opt/intel/ope
 export INTEL_OPENVINO_DIR=/opt/intel/openvino_2022
 export VENV_TF2_PYTHON=~/99.job/workbench/.unified_venv/bin/python
 export SERVER_MODE=development
-export PUBLIC_PORT=4200
+export FLASK_APP=~/99.job/workbench/migrations/migration:APP
 
-~/99.job/workbench/.venv/bin/python \
- ~/99.job/workbench/.venv/bin/celery -A wb.main.tasks.task worker --loglevel=DEBUG
+~/99.job/workbench/.venv/bin/python ~/99.job/workbench/.venv/bin/flask db upgrade
