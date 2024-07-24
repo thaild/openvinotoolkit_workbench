@@ -12,6 +12,7 @@
 1. Clone the DL Workbench repository:
     ```bash
     git clone https://github.com/openvinotoolkit/workbench.git
+   ```
 2. Run the script to bootstrap os from the root folder of the DL Workbench repository:
     ```bash
     bash automation/bootstrap/bootstrap_os.sh
